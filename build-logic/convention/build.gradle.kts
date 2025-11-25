@@ -41,14 +41,19 @@ gradlePlugin {
             implementationClass = "AndroidPresentationUIConventionPlugin"
         }
 
+        register("jvmLibrary") {
+            id = "multi.module.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
+
         register("androidRoom") {
             id = "multi.module.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
 
-        register("jvmLibrary") {
-            id = "multi.module.jvm.library"
-            implementationClass = "JvmLibraryConventionPlugin"
+        register("androidHilt") {
+            id = "multi.module.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
         }
     }
 

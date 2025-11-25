@@ -9,6 +9,8 @@ fun DependencyHandlerScope.addUILayerDependencies(project: Project) {
     // 디자인시스템 모듈
     add("implementation", project(":core:designsystem"))
 
+//    add("implementation", project.libs.findLibrary("androidx.hilt.compiler").get())
+
     // Compose bundle
     add("implementation", project.libs.findBundle("compose").get())
 

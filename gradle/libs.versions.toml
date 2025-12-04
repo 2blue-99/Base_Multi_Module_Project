@@ -13,7 +13,8 @@ agp = "8.13.1"
 androidTools = "31.13.1"
 kotlin = "2.0.21"
 
-room = "2.8.4"
+room = "2.7.2"
+ksp = "2.0.21-1.0.25"
 
 hilt = "2.51.1"
 hiltCompiler = "1.2.0"
@@ -32,6 +33,8 @@ appcompat = "1.6.1"
 material = "1.10.0"
 
 desugar_jdk_libs = "2.0.4"
+
+timber = "5.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -78,7 +81,10 @@ android-tools-common = { group = "com.android.tools", name = "common", version.r
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
 
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
 [plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

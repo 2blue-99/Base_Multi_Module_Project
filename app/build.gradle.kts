@@ -12,7 +12,10 @@ android {
 }
 
 dependencies {
+    implementation(projects.core.data)
     implementation(projects.feature.googleMap)
     implementation(projects.feature.login)
     implementation(projects.feature.setting)
+
+    implementation(libs.timber)
 }

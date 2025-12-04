@@ -5,9 +5,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.blue.domain.model.Common
 import com.blue.domain.repo.CommonRepo
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 class CommonViewModel @Inject constructor(
     private val commonRepo: CommonRepo
 ): ViewModel() {
